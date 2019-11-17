@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>12 Exercício :.</title>
+</head>
+
+<!-- Java Script -->
+
+<script>
+/*
+12) Utilizando como base o mês de novembro, faça com que seja informado
+ um dia entre 1 e 30, retorne se é um dia de semana ou final de semana.
+  Caso o usuário informe um dia inferior a 1 ou superior a 30 informe 
+  que a data é inválida.
+*/
+
+// Coleta
+var data = parseInt(prompt("Escolha um dia do mês de Novembro!"));
+
+//Logica
+
+if(data == 2 || data == 3 || data == 9 || data == 10 || data ==16 || data == 17 || data == 23 || data == 24 || data == 30){
+    alert("Final de semana");
+} else if(data <1 || data > 30 ){
+    alert("Data Inválida");
+}else if(data == 15){
+    alert("Feriado");
+}else{
+    alert("Dia de semana");
+}
+
+</script>
+
+<body>
+
+
+    
+</body>
+</html>
