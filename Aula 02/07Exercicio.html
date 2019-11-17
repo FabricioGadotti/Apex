@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>07 Exercício :.</title>
+</head>
+
+<!-- Java Script -->
+
+<script>
+    /* 7) Deverá ser pedido a quantidade de cada uma das moedas existentes, após isso informar o 
+    total economizado. Vamos supor os seguintes valores:
+ 
+    Moedas  |  Quantidade
+    R$0,01 -   1
+    R$0,05 -   1
+    R$0,10 -   1
+    R$0.25 -   1
+    R$0.50 -   1	
+    R$1.00 -   1
+    Total: R$1,91
+
+    */
+
+    // Capturar quantidade de moedas
+
+    var cents01 = parseInt(prompt("Quantas moedas de R$ 0,01 você possui?"));
+    var cents05 = parseInt(prompt("Quantas moedas de R$ 0,05 você possui?"));
+    var cents10 = parseInt(prompt("Quantas moedas de R$ 0,10 você possui?"));
+    var cents25 = parseInt(prompt("Quantas moedas de R$ 0,25 você possui?"));
+    var cents50 = parseInt(prompt("Quantas moedas de R$ 0,50 você possui?"));
+    var cents100 = parseInt(prompt("Quantas moedas de R$ 1,00 você possui?"));
+
+
+    // Logica
+    cents01 = cents01 * 0.01;
+    cents05 = cents05 * 0.05;
+    cents10 = cents10 * 0.10;
+    cents25 = cents25 * 0.25;
+    cents50 = cents50 * 0.50;
+    cents100 = cents100 * 1;
+
+    var total = cents01 + cents05 + cents10 + cents25 + cents50 + cents100;
+    alert("Você economizou R$ " + total.toFixed(2));
+
+
+</script>
+
+<body>
+
+
+    
+</body>
+</html>
