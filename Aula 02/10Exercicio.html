@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>10 Exercício :.</title>
+</head>
+<!-- JS -->
+<script>
+/*  10) Haverá uma lista de produtos a serem consumidos:
+a) Pizza - R$ 8,00
+b) Hambúrguer - R$ 12,00
+c) Lasanha - R$ 9,00
+d) Pão de Queijo - R$ 2,50
+e) Pastel - R$ 4,00
+
+O cliente deverá selecionar apenas UM desses itens e a quantidade adquirida. Em seguida 
+exiba o total e peça o valor pago pelo cliente, depois disso exiba o troco que deverá ser
+ dado ao cliente. Valide caso o valor pago pelo cliente seja inferior ao total consumido.
+
+*/
+
+// Selecionar produto
+var produto = parseInt(prompt(`Qual produto você quer consumir? \n1) Pizza - R$ 8,00\n2)Hamburguer - R$ 12,00\n3)Lasanha - R$ 9,00 \n4)Pão de Queijo - R$ 2,50 \n5)Pastel - R$ 4,00`));
+var qtde = parseInt(prompt('Qual a quantidade desejada?'));
+
+// logica
+if(produto = 1){
+    produto = parseFloat(8);
+    var preco = produto * qtde;
+    preco = parseFloat(preco);
+    preco = preco.toFixed(2);
+    var total = parseFloat(prompt(`O Valor de suas compras foi de R$ ${preco} \nQual o valor pago?`));
+    total = total.toFixed(2);
+    if(total < preco){
+       alert("Valor inválido");
+    } else if(total >= preco){
+        var troco = (total - preco);
+        troco = troco.toFixed(2);
+        troco = troco.replace('.',',');
+        alert(`Seu troco é de R$ ` + (troco) + `.`);
+        
+    } 
+
+} else if(produto = 2){
+    produto = parseFloat(12);
+    var preco = produto * qtde;
+    preco = parseFloat(preco);
+    preco = preco.toFixed(2);
+    var total = parseFloat(prompt(`O Valor de suas compras foi de R$ ${preco} \nQual o valor pago?`));
+    total = total.toFixed(2);
+    if(total < preco){
+       alert("Valor inválido");
+    } else if(total >= preco){
+        var troco = (total - preco);
+        troco = troco.toFixed(2);
+        troco = troco.replace('.',',');
+        alert(`Seu troco é de R$ ` + (troco) + `.`);
+        
+    } 
+} else if(produto = 3){
+    produto = parseFloat(9);
+    var preco = produto * qtde;
+    preco = parseFloat(preco);
+    preco = preco.toFixed(2);
+    var total = parseFloat(prompt(`O Valor de suas compras foi de R$ ${preco} \nQual o valor pago?`));
+    total = total.toFixed(2);
+    if(total < preco){
+       alert("Valor inválido");
+    } else if(total >= preco){
+        var troco = (total - preco);
+        troco = troco.toFixed(2);
+        troco = troco.replace('.',',');
+        alert(`Seu troco é de R$ ` + (troco) + `.`);
+        
+    } 
+} else if (produto = 4){
+    produto = parseFloat(2.5);
+    var preco = produto * qtde;
+    preco = parseFloat(preco);
+    preco = preco.toFixed(2);
+    var total = parseFloat(prompt(`O Valor de suas compras foi de R$ ${preco} \nQual o valor pago?`));
+    total = total.toFixed(2);
+    if(total < preco){
+       alert("Valor inválido");
+    } else if(total >= preco){
+        var troco = (total - preco);
+        troco = troco.toFixed(2);
+        troco = troco.replace('.',',');
+        alert(`Seu troco é de R$ ` + (troco) + `.`);
+        
+    } 
+
+} else if (produto = 5){
+    produto = parseFloat(5);
+    var preco = produto * qtde;
+    preco = parseFloat(preco);
+    preco = preco.toFixed(2);
+    var total = parseFloat(prompt(`O Valor de suas compras foi de R$ ${preco} \nQual o valor pago?`));
+    total = total.toFixed(2);
+    if(total < preco){
+       alert("Valor inválido");
+    } else if(total >= preco){
+        var troco = (total - preco);
+        troco = troco.toFixed(2);
+        troco = troco.replace('.',',');
+        alert(`Seu troco é de R$ ` + (troco) + `.`);
+        
+    } 
+} else if(produto > 5){
+    alert("Produto Inválido");
+}
+
+</script>
+<body>
+
+
+    
+</body>
+</html>
